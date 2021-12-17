@@ -12,7 +12,7 @@
       padding: 2.5%;
     }
 
-    /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
     html {
       line-height: 1.15;
       -webkit-text-size-adjust: 100%
@@ -394,9 +394,19 @@
       width: 100%
     }
   </style>
-  <link href="//vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">
+
+
+  <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+  <!-- <link href="http://vjs.zencdn.net/4.2/video-js.css" rel="stylesheet"> -->
+  <link href="videojs.markers.css" rel="stylesheet">
+
+
+
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
 </head>
 
 <body class="antialiased">
@@ -413,12 +423,17 @@
   <div class="container">
     @include('video')
   </div>
+  <!-- <script src="http://vjs.zencdn.net/4.2/video.js"></script> -->
+<script src='../src/videojs.markers.js'></script>
 
   <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
+
   <script src="{{ mix('/js/app.js') }}"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>

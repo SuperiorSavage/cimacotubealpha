@@ -5744,7 +5744,7 @@
   "resolved" "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz"
   "version" "1.1.2"
 
-"video.js@^6 || ^7", "video.js@^7.17.0":
+"video.js@^6 || ^7", "video.js@^7.17.0", "video.js@>=4":
   "integrity" "sha512-8RbLu9+Pdpep9OTPncUHIvZXFgn/7hKdPnSTE/lGSnlFSucXtTUBp41R7NDwncscMLQ0WgazUbmFlvr4MNWMbA=="
   "resolved" "https://registry.npmjs.org/video.js/-/video.js-7.17.0.tgz"
   "version" "7.17.0"
@@ -5767,6 +5767,11 @@
   "integrity" "sha512-g8vHMKK2/JGorSfqAZQUmYYNnXmfec4MLhwtEFS+mMs2IDY398GLysy6BH6K+aS1KMNu/xWZ8Sue/X/mdQPliA=="
   "resolved" "https://registry.npmjs.org/videojs-font/-/videojs-font-3.2.0.tgz"
   "version" "3.2.0"
+
+"videojs-markers@^1.0.1":
+  "integrity" "sha1-1/jYBCU/1YeBMnH42zCKIrn33zQ="
+  "resolved" "https://registry.npmjs.org/videojs-markers/-/videojs-markers-1.0.1.tgz"
+  "version" "1.0.1"
 
 "videojs-vtt.js@^0.15.3":
   "integrity" "sha512-5FvVsICuMRx6Hd7H/Y9s9GDeEtYcXQWzGMS+sl4UX3t/zoHp3y+isSfIPRochnTH7h+Bh1ILyC639xy9Z6kPag=="
