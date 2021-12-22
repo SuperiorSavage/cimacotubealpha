@@ -396,10 +396,10 @@
   </style>
 
 
-  <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+  <!-- <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet"> -->
   <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
   <!-- <link href="http://vjs.zencdn.net/4.2/video-js.css" rel="stylesheet"> -->
-  <link href="videojs.markers.css" rel="stylesheet">
+  <!-- <link href="videojs.markers.css" rel="stylesheet"> -->
 
 
 
@@ -424,9 +424,9 @@
     @include('video')
   </div>
   <!-- <script src="http://vjs.zencdn.net/4.2/video.js"></script> -->
-<script src='../src/videojs.markers.js'></script>
+<!-- <script src='../src/videojs.markers.js'></script> -->
 
-  <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
+  <script src="http://vjs.zencdn.net/7.10.2/video.min.js"></script>
 
   <script src="{{ mix('/js/app.js') }}"></script>
 

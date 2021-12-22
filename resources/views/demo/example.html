@@ -1,5 +1,3 @@
-<!-- {{asset('assets/wz.mp4')}} -->
-
 <!doctype html>
 <html>
 <head>
@@ -25,43 +23,37 @@
          clear: both;
       }
    </style>
-   
-   <!-- <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" /> -->
-   <link href="http://vjs.zencdn.net/5.11.8/video-js.css" rel="stylesheet">
-   <link href="{{asset('assets/dist/videojs-markers.js')}}" rel="stylesheet">
-   <link href="{{asset('assets/dist/videojs.markers.css')}}" rel="stylesheet">
-   
+   <link href="http://vjs.zencdn.net/4.3/video-js.css" rel="stylesheet">
+   <link href="../dist/videojs.markers.css" rel="stylesheet">
 
 </head>
 <body>
 
-    <p>This is a demo of video-markers plugin for videojs 5</p>
-  
-    <div>
-       <video id="test_video" controls preload="none" class="video-js vjs-default-skin" width="640" height="264">
-           <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-           <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
-       </video>
-       <div class='event-list'>
-          <div><b>Events: </b></div>
-       </div>
-    </div>
-  
-    <div class="control">
-       <div class='next'>Next</div>
-       <div class='prev'>Prev</div>
-       <div class='remove'>Remove</div>
-       <div class='add'>Add</div>
-       <div class='updateTime'>Move all markers right by 1 sec</div>
-       <div class='reset'>Reset</div>
-       <div class='destroy'>Destroy</div>
-    </div>
-  </body>
+  <p>This is a demo of video-markers plugin for videojs</p>
 
+  <div>
+     <video id="test_video" controls preload="none" class="video-js vjs-default-skin" width="640" height="264">
+         <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+         <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+     </video>
+     <div class='event-list'>
+        <div><b>Events: </b></div>
+     </div>
+  </div>
+
+  <div class="control">
+     <div class='next'>Next</div>
+     <div class='prev'>Prev</div>
+     <div class='remove'>Remove</div>
+     <div class='add'>Add</div>
+     <div class='updateTime'>Move all markers right by 1 sec</div>
+     <div class='reset'>Reset</div>
+     <div class='destroy'>Destroy</div>
+  </div>
+</body>
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-<script src="http://vjs.zencdn.net/5.11.8/video.js"></script>
-<script src="{{asset('assets/dist/videojs-markers.js')}}"></script>
-<!-- <script src="{{asset('assets/Happy_Scribe_Subtitles.vtt')}}" ></script> -->
+<script src="http://vjs.zencdn.net/4.3/video.js"></script>
+<script src='../dist/videojs-markers.js'></script>
 
 <script>
    // initialize video.js
