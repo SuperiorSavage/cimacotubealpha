@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Video.Js demo</title>
 
   <style>
@@ -395,48 +394,67 @@
     }
   </style>
 
+  <style>
+    p {
+      background-color: #eee;
+      border: thin solid #777;
+      padding: 10px;
+    }
 
-  <!-- <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet"> -->
+    .video-js {
+      float: left;
+    }
+
+    .event-list {
+      float: left;
+      border: black;
+      margin-left: 5px;
+      width: 200px;
+
+    }
+
+    .control {
+      clear: both;
+    }
+  </style>
+
+  <style>
+    .video-js .vjs-progress-holder .vjs-play-progress {
+      display: none;
+    }
+  </style>
+
+ @yield('style')
+
+
   <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
-  <!-- <link href="http://vjs.zencdn.net/4.2/video-js.css" rel="stylesheet"> -->
-  <!-- <link href="videojs.markers.css" rel="stylesheet"> -->
-
-
-
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link href="{{asset('assets/dist/videojs.markers.css')}}" rel="stylesheet">
+
 
 </head>
 
 <body class="antialiased">
-  <div id="app">
-    <div class="container-well">
-      <example-component></example-component>
-    </div>
-    <div class="container">
-      <video-component></video-component>
-    </div>
-  </div>
 
+  @yield('content')
 
-  <div class="container">
-    @include('video')
-  </div>
-  <!-- <script src="http://vjs.zencdn.net/4.2/video.js"></script> -->
-<!-- <script src='../src/videojs.markers.js'></script> -->
-
-  <script src="http://vjs.zencdn.net/7.10.2/video.min.js"></script>
-
-  <script src="{{ mix('/js/app.js') }}"></script>
-
+  <!-- <script src="{{asset('assets/main.js')}}"></script> -->
+  <script src="http://vjs.zencdn.net/7.17.0/video.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
+  <script src="http://vjs.zencdn.net/7.17.0/video.js"></script>
+  <script src="{{asset('assets/dist/videojs-markers.js')}}"></script>
+  @yield('script')
+
+
+  <script src="{{ mix('/js/app.js') }}"></script>
+
+
 </body>
 
 </html>

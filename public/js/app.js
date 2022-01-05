@@ -93,8 +93,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -46514,7 +46512,7 @@ var render = function () {
         "b-navbar",
         { attrs: { toggleable: "lg", type: "dark", variant: "info" } },
         [
-          _c("b-navbar-brand", { attrs: { href: "#" } }, [_vm._v("Cimaco")]),
+          _c("b-navbar-brand", { attrs: { href: "/" } }, [_vm._v("Cimaco")]),
           _vm._v(" "),
           _c("b-navbar-toggle", { attrs: { target: "nav-collapse" } }),
           _vm._v(" "),
@@ -46525,7 +46523,7 @@ var render = function () {
               _c(
                 "b-navbar-nav",
                 [
-                  _c("b-nav-item", { attrs: { href: "#" } }, [_vm._v("Link")]),
+                  _c("b-nav-item", { attrs: { href: "/" } }, [_vm._v("Link")]),
                   _vm._v(" "),
                   _c("b-nav-item", { attrs: { href: "#", disabled: "" } }, [
                     _vm._v("Deshabilitado"),
@@ -46646,28 +46644,17 @@ var render = function () {
   return _c(
     "div",
     [
-      _c(
-        "b-card",
-        {
-          attrs: {
-            overlay: "",
-            "img-src":
-              "https://www.cimaco.com.mx/file/general/CENAS%20BANNERS-CL-690x375.20211124.jpg",
-            "img-alt": "Card Image",
-            "text-variant": "white",
-            title: "Imagen de pruebaa",
-            "sub-title": "Subtitulo de prueba",
-          },
+      _c("b-card", {
+        attrs: {
+          overlay: "",
+          "img-src":
+            "https://www.cimaco.com.mx/file/general/CENAS%20BANNERS-CL-690x375.20211124.jpg",
+          "img-alt": "Card Image",
+          "text-variant": "white",
+          title: "",
+          "sub-title": "",
         },
-        [
-          _c("b-card-text", [
-            _vm._v(
-              "\n      Ejemplo de texto sobre una carta de imagen completa.\n    "
-            ),
-          ]),
-        ],
-        1
-      ),
+      }),
     ],
     1
   )

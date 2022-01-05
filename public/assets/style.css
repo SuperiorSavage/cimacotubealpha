@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:1.3;	
+	width: 100%;
+	height: 100%;
+	background: #F7F7F7;
+}
+header{
+	width: 100%;
+	border-bottom: 5px solid #00A1D6;
+	background: #fff;
+	overflow: auto;
+}
+.logo{
+	height: 65px;
+	width: 278px;
+	margin: 5px 0;
+	float: left;
+	background: url('https://st.devlaz.com/i/logo.png') no-repeat;
+}
+footer{
+	width: 100%;
+	background-color: #c6d0db;
+	padding: 20px 0px;
+	color: #000000;
+	font-size: 12px;
+	text-align: left;
+}
+.flex{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: auto;
+	background: transparent;
+}
+main{	
+	width: auto;
+	margin: 0 auto;
+	/* min-height: 450px; */
+	overflow-y: auto;
+	padding: 20px 0;
+}
+h1 {
+	font-size: 1.8em;
+	color: #555555;
+	text-align: center;
+}
+
+
+
+
+
+
+/* Minitura video */
+.preview{
+	/* width: 350px;
+	height: 195px; */
+	border: 1px solid #bbbbbb;
+	border-radius: 4px;
+	overflow: hidden;
+	background: #fff;
+	cursor: pointer;
+	position: relative;
+}
+
+.preview img{
+	width: 100%;
+	/* height: auto; */
+}
+
+.preview div{
+	background: rgba(0,0,0,0.5);
+	border-radius: 2px;
+	color: #fff;
+	padding: 2px 4px;
+	width: 50px;
+	float: right;
+	margin-top: -30px;
+	position: relative;
+}
+
+.preview span{
+	font-size: 15px;
+	padding: 0 4px;
+}
+
+.link{
+	text-decoration: none;
+	color: #000000;
+	display: inline-block;
+}
+.link:hover{
+	color: #8c0000;
+}
+

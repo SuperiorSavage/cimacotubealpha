@@ -14,8 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('videos');
 });
 Route::get('/videomarker', function () {
     return view('videomarker');
+});
+Route::get('/videopreview', function () {
+    return view('preview');
+});
+Route::get('/video', function () {
+    return view('video');
 });

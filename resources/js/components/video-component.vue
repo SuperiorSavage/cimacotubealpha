@@ -5,12 +5,10 @@
     img-src="https://www.cimaco.com.mx/file/general/CENAS%20BANNERS-CL-690x375.20211124.jpg"
     img-alt="Card Image"
     text-variant="white"
-    title="Imagen de pruebaa"
-    sub-title="Subtitulo de prueba"
+    title=""
+    sub-title=""
   >
-    <b-card-text>
-      Ejemplo de texto sobre una carta de imagen completa.
-    </b-card-text>
+
   </b-card>
 </div>
 </template>
